@@ -138,6 +138,10 @@
 #   Default: undef
 #   Hash of 'logging' config parameters.
 #
+# [*letsencrypt*]
+#   Default: undef
+#   Hash of 'letsencrypt' config parameters.
+#
 # [*logrotate*]
 #   Default: undef
 #   Hash of 'logrotate' config parameters.
@@ -349,6 +353,7 @@ class gitlab (
   $gitlab_rails = undef,
   $high_availability = undef,
   $logging = undef,
+  $letsencrypt = undef,
   $logrotate = undef,
   $manage_storage_directories = undef,
   $manage_accounts = undef,
